@@ -1,0 +1,66 @@
+ <div
+        id="row1"
+        className="flex  justify-between w-[100%] h-60 px-8"
+      >
+        <div
+          className="border-2 w-1/5 flex flex-col gap-5 justify-center items-center"
+          id="product "
+        >
+          <h1 className="text-white text-2xl font-bold  ">Parkbench</h1>
+          <button className="bg-red-500 text-white rounded-sm w-20 " onClick={showmore}>View More</button>
+        </div>
+        <div
+          className="border-2 w-1/5 flex flex-col gap-5  justify-center items-center"
+          id="product "
+        >
+          <h1 className="text-white text-2xl font-bold  ">Parapet</h1>
+          <button className="bg-red-500 text-white rounded-sm w-20">View More</button>
+        </div>
+        <div
+          className="border-2 w-1/5 flex flex-col gap-5  justify-center items-center"
+          id="product "
+        >
+          <h1 className="text-white text-2xl font-bold  ">Fishpond</h1>
+          <button className="bg-red-500 text-white rounded-sm w-20">View More</button>
+        </div>
+        <div
+          className="border-2 w-1/5 flex flex-col gap-5  justify-center items-center"
+          id="product "
+        >
+          <h1 className="text-white text-2xl font-bold  ">Beeding</h1>
+          <button className="bg-red-500 text-white rounded-sm w-20">View More</button>
+        </div>
+      </div>
+      <div
+        id="row2"
+        className=" flex justify-between w-[100%] h-60 px-8"
+      >
+        <div
+          className="border-2 w-1/5 flex flex-col gap-5  justify-center items-center"
+          id="product "
+        >
+          <h1 className="text-white text-2xl font-bold  ">Fencing</h1>
+          <button className="bg-red-500 text-white rounded-sm w-20">View More</button>
+        </div>
+        <div
+          className="border-2 w-1/5 flex flex-col gap-5  justify-center items-center"
+          id="product "
+        >
+          <h1 className="text-white text-2xl font-bold  ">Pillar-Top</h1>
+          <button className="bg-red-500 text-white rounded-sm w-20">View More</button>
+        </div>
+        <div
+          className="border-2 w-1/5 flex flex-col gap-5  justify-center items-center"
+          id="product "
+        >
+          <h1 className="text-white text-2xl font-bold  ">Washing-Table</h1>
+          <button className="bg-red-500 text-white rounded-sm w-20">View More</button>
+        </div>
+        <div
+          className="border-2 w-1/5 flex flex-col gap-5  justify-center items-center"
+          id="product "
+        >
+          <h1 className="text-white text-2xl font-bold  ">Beam support</h1>
+          <button className="bg-red-500 text-white rounded-sm w-20">View More</button>
+        </div>
+      </div>

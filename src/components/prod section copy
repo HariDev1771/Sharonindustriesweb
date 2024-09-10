@@ -1,0 +1,109 @@
+import React from "react";
+import { useNavigate } from "react-router";
+import Product_detail_page from "./Product_detail_page";
+import Data from './data.json'
+
+
+
+const Product_Section = () => {
+    const navigate=useNavigate()
+   const showmore1=()=>{
+    navigate('productsection/product_detail_page')
+   }
+  return (
+    <div className="flex flex-col items-center gap-5 border-4 border-green-500 p-10 mt-20">
+        <h1 className="text-white text-center text-3xl font-semibold">Our Products</h1>
+        <div
+        id="row1"
+        className="flex  justify-between w-[100%] h-60 px-8"
+      >
+        <div
+          className="border-2 w-1/5 flex flex-col gap-5 justify-center items-center"
+          id="product "
+        >
+          <h1 className="text-white text-2xl font-bold  ">Parkbench</h1>
+          <button className="bg-red-500 text-white rounded-sm w-20 "onClick={showmore()} >View More</button>
+        </div>
+        <div
+          className="border-2 w-1/5 flex flex-col gap-5  justify-center items-center"
+          id="product "
+        >
+          <h1 className="text-white text-2xl font-bold  ">Parapet</h1>
+          <button className="bg-red-500 text-white rounded-sm w-20">View More</button>
+        </div>
+        <div
+          className="border-2 w-1/5 flex flex-col gap-5  justify-center items-center"
+          id="product "
+        >
+          <h1 className="text-white text-2xl font-bold  ">Fishpond</h1>
+          <button className="bg-red-500 text-white rounded-sm w-20">View More</button>
+        </div>
+        <div
+          className="border-2 w-1/5 flex flex-col gap-5  justify-center items-center"
+          id="product "
+        >
+          <h1 className="text-white text-2xl font-bold  ">Beeding</h1>
+          <button className="bg-red-500 text-white rounded-sm w-20">View More</button>
+        </div>
+      </div>
+      <div
+        id="row2"
+        className=" flex justify-between w-[100%] h-60 px-8"
+      >
+        <div
+          className="border-2 w-1/5 flex flex-col gap-5  justify-center items-center"
+          id="product "
+        >
+          <h1 className="text-white text-2xl font-bold  ">Fencing</h1>
+          <button className="bg-red-500 text-white rounded-sm w-20">View More</button>
+        </div>
+        <div
+          className="border-2 w-1/5 flex flex-col gap-5  justify-center items-center"
+          id="product "
+        >
+          <h1 className="text-white text-2xl font-bold  ">Pillar-Top</h1>
+          <button className="bg-red-500 text-white rounded-sm w-20">View More</button>
+        </div>
+        <div
+          className="border-2 w-1/5 flex flex-col gap-5  justify-center items-center"
+          id="product "
+        >
+          <h1 className="text-white text-2xl font-bold  ">Washing-Table</h1>
+          <button className="bg-red-500 text-white rounded-sm w-20">View More</button>
+        </div>
+        <div
+          className="border-2 w-1/5 flex flex-col gap-5  justify-center items-center"
+          id="product "
+        >
+          <h1 className="text-white text-2xl font-bold  ">Beam support</h1>
+          <button className="bg-red-500 text-white rounded-sm w-20">View More</button>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Product_Section;
+import React from 'react'
+import { useParams } from 'react-router'
+
+const Product_detail_page = ({product}) => {
+  const {params}=useParams();
+  return (
+    <div>
+          <h1 className='text-white text-3xl font-semibold text-center'>{product}</h1>
+          <div className='w-[100%] p-8 flex gap-1 flex-wrap'>
+            <img className='w-[30rem]' src='https://sharonindustry.com/_next/image?url=https%3A%2F%2Ffirebasestorage.googleapis.com%2Fv0%2Fb%2Flinkedin-clone-9c18c.appspot.com%2Fo%2Fparkbench%252Fparkbench-3%3Falt%3Dmedia%26token%3D63c2d00b-893b-4212-b77e-46082e3458a1&w=1920&q=75'/>
+            <img className='w-[30rem]' src='https://sharonindustry.com/_next/image?url=https%3A%2F%2Ffirebasestorage.googleapis.com%2Fv0%2Fb%2Flinkedin-clone-9c18c.appspot.com%2Fo%2Fparkbench%252Fparkbench-3%3Falt%3Dmedia%26token%3D63c2d00b-893b-4212-b77e-46082e3458a1&w=1920&q=75'/>
+            <img className='w-[30rem]' src='https://sharonindustry.com/_next/image?url=https%3A%2F%2Ffirebasestorage.googleapis.com%2Fv0%2Fb%2Flinkedin-clone-9c18c.appspot.com%2Fo%2Fparkbench%252Fparkbench-3%3Falt%3Dmedia%26token%3D63c2d00b-893b-4212-b77e-46082e3458a1&w=1920&q=75'/>
+            <img className='w-[30rem]' src='https://sharonindustry.com/_next/image?url=https%3A%2F%2Ffirebasestorage.googleapis.com%2Fv0%2Fb%2Flinkedin-clone-9c18c.appspot.com%2Fo%2Fparkbench%252Fparkbench-3%3Falt%3Dmedia%26token%3D63c2d00b-893b-4212-b77e-46082e3458a1&w=1920&q=75'/>
+
+          </div>
+    </div>
+  )
+}
+
+export default Product_detail_page
+
+
+
